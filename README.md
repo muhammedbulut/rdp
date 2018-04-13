@@ -191,7 +191,7 @@ Kullanım :
 https://www.youtube.com/watch?v=QErn6wUyxps
 
 
-# 4)	Hydra - Parola Kırma Aracı
+# 5)	Hydra - Parola Kırma Aracı
 Hydra, saldırıya geçmek için sayısız protokolü destekleyen, paralelize calisan bir sifre kırıcıdır. Yeni modüllerin eklenmesi kolaydır, bunun yanında esnek ve çok hızlıdır.Bu araç, araştırmacılara ve güvenlik danışmanlarına uzaktan sistemden yetkisiz erişim elde etmenin ne kadar kolay olduğunu gösterme imkanı verir.
 
 Güncel olarak bu  tool şunları desteklemektedir:  
