@@ -1,4 +1,4 @@
-1)	Crowbar- Parola kırma aracı
+# 1)	Crowbar- Parola kırma aracı
 
 Crowbar sızma testleri esnasında kullanılan bir parola kırma aracıdır. Diğer parola kırma araçlarına göre farklı bazı protokoller kullanmaktadır. Örneğin bazı digger araçlar SSH parola kırma için kullanıcı adı-şifre kullanmasına rağmen crowbar SSH anahtarı kullanmaktadır.
 
@@ -8,7 +8,7 @@ Kurulum
 
 İlk olarak bağımlı olan gerekli şeyleri kurmak için,
 
-# apt-get -y install openvpn freerdp-x11 vncviewer
+## apt-get -y install openvpn freerdp-x11 vncviewer
 
 Daha sonra son versiyonunu indirip kullanabilirsiniz.
 
@@ -33,7 +33,10 @@ Kullanım
 -u : Sadece tk bir kullanıcı adı yazacağımız zaman kullanılan parametredir. Eğer bir txt dosyasından kullanıcı adlarını okumak istediğimizde -U ve dosya yolunu kullanmamız gerekmektedir.
 Örnek kullanım kodu :
 
-# ./crowbar.py -b rdp -u decoder -C/root/Desktop/rdp_pass.lst -s 10.5.41.212/32 -v
+### ./crowbar.py -b rdp -u decoder -C/root/Desktop/rdp_pass.lst -s 10.5.41.212/32 -v
+
+![ekran resmi 2018-04-12 16 39 39](https://user-images.githubusercontent.com/37982203/38737013-84fa6426-3f36-11e8-82f1-c6aa9016b8c7.png)
+![ekran resmi 2018-04-12 16 39 52](https://user-images.githubusercontent.com/37982203/38737016-8a342b2a-3f36-11e8-8078-02790002c579.png)
 
 
 
