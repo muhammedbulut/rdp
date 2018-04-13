@@ -191,5 +191,62 @@ Kullanım :
 https://www.youtube.com/watch?v=QErn6wUyxps
 
 
+# 4)	Hydra - Parola Kırma Aracı
+Hydra, saldırıya geçmek için sayısız protokolü destekleyen, paralelize calisan bir sifre kırıcıdır. Yeni modüllerin eklenmesi kolaydır, bunun yanında esnek ve çok hızlıdır.Bu araç, araştırmacılara ve güvenlik danışmanlarına uzaktan sistemden yetkisiz erişim elde etmenin ne kadar kolay olduğunu gösterme imkanı verir.
+
+Güncel olarak bu  tool şunları desteklemektedir:  
+
+AFP, Cisco AAA, Cisco auth, Cisco enable, CVS, Firebird, FTP, FTPS ,HTTP-FORM-GET, HTTP-FORM-POST, HTTP-GET, HTTP-HEAD, HTTP-PROXY, HTTP-PROXY-URLENUM, ICQ, IMAP, IRC, LDAP2, LDAP3, MS-SQL, MYSQL,  NCP,NNTP, Oracle,  Oracle-Listener,  Oracle-SID, PC-Anywhere, PCNFS, POP3, POST‐GRES, RDP, REXEC, RLOGIN, RSH, SAP/R3, SIP, SMB, SMTP, SMTP-Enum, SNMP,SOCKS5, SSH (v1 and v2), SSHKEY, Subversion, Teamspeak (TS2), Telnet, VMware-Auth, VNC and XMPP.
+
+Çoğu protokol için SSL modu kullanılabilir (örn.  https-get,  ftp-ssl gibi)
+Compile sırasında gerekli tüm kütüphaneler bulunmuyor olabilir onu da hydra yazarak görebilirsiniz.
+
+Kullanım:
+
+-l : kullanıcı ismi ve eğer dosyadan okumak istiyorsanız -L ve dosya yolunu vererek kullanabilirsiniz.
+
+-p: parola ve eğer dosyadan okumak istiyorsanız -P ve dosya yolunu vererek kullanabilirsiniz. 
+
+-v : denenen ikilileri ekranda göstermektedir.
+
+-4, -6 :ipv4 veya ipv6 adreslerini desteklemektedir. Eğer seçilmezse otomatik olarak ipv4 adreslerini almaktadır.
+
+-m : hedef ip ismini burada belirtiyorsunuz eğer yine bir dosyadan okumak isterseniz -M kullanmalısınız.
+
+-f : Eğer eşleme bulunursa aramayı bırakıyor. 
+
+-o: Bulunan eşleşmeyi yanına çıktı dosya ismini vererek oraya yazdırabiliyorsunuz. 
+
+-t: paralel bağlanmada maximum görev sayısını belirlememize yardımcı olur.
+
+-q: Baglantı hatalarını yazmamak istiyorsak kullanmalıyız.
+ 
+#### Örnek kod kullanımı:
+##### v7.5 için: 
+#### hydra -t 2 -v -f -l decoder -P /root/Desktop/rdp_pass.lst rdp://102.96.0.35 
+##### v8.3 için: 
+#### hydra -t 8 -L /root/Desktop/rdp_user.lst -P /root/Desktop/rdp_pass.lst  -M  /root/Desktop/rdp_ip.lst rdp -Vv 
+ 
+Son sürümü olan 8.6'da yeni güncelleme ile rdp şifre gösterimi ile sorun yaşadığı için kendi videomu çekemedim.Rdp desteği olmasına rağmen aşağıdaki hatayı almaktayım:
+
+WARNING] the rdp module is currently reported to be unreliable, most likely against new Windows version. Please test, report - and if possible, fix.
+
+Bu yüzden önceki versiyonlarda olan videoları örnek olarak verdim.
+
+
+
+![ekran resmi 2018-04-13 19 57 01](https://user-images.githubusercontent.com/37982203/38748835-1f069e74-3f58-11e8-8a98-5c51aaa0c1c5.png)
+
+
+
+#### Örnek Kullanım video linki:
+
+v7.5
+https://www.youtube.com/watch?v=PK4NlDDNUak&t=97s
+
+v8.3
+https://www.youtube.com/watch?v=EpcssK5mPh8&t=141s
+
+
 
 
