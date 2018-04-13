@@ -22,7 +22,7 @@ Kullanım
 
 -b: Yukarıda belirtilen crowbarın desteklediği servisleri kullanmak için başına yazılır. Örn: -b openvpn, -b rdp
 
--c: Sadece tek bir şifre yazacağımız zaman kullandığımız parameter. Eğer bir txt dosyasından parolaları okumak istediğimizde -C ve dosyanın yolu şeklinde kullanıyoruz.
+-c: Sadece tek bir şifre yazacağımız zaman kullandığımız parametre. Eğer bir txt dosyasından parolaları okumak istediğimizde -C ve dosyanın yolu şeklinde kullanıyoruz.
 
 -p: Port numarasını ifade eder.
 
