@@ -36,6 +36,8 @@ Kullanım
 
 #### ./crowbar.py -b rdp -u decoder -C/root/Desktop/rdp_pass.lst -s 10.5.41.212/32 -v
 
+
+
 ![ekran resmi 2018-04-12 16 39 52](https://user-images.githubusercontent.com/37982203/38737016-8a342b2a-3f36-11e8-8078-02790002c579.png)
 
 ![ekran resmi 2018-04-12 16 39 39](https://user-images.githubusercontent.com/37982203/38737013-84fa6426-3f36-11e8-82f1-c6aa9016b8c7.png)
@@ -43,7 +45,7 @@ Kullanım
 
 
 
-#### Örnek Kullanim video linki:
+#### Örnek Kullanım video linki:
 
 https://www.youtube.com/watch?v=M15ESpW0Vf8
 
@@ -52,7 +54,7 @@ https://www.youtube.com/watch?v=M15ESpW0Vf8
 #   2) Patator - Parola Kırma Aracı
 Patator parola tahmin etme atakları için yazılmıştır. Diğer araçlara göre hızlı olması için optimize edilmiş çoklu thread modülünü kullanan Python ile yazılmıştır. 20 'e yakın protokole paralo kırma atağı gerçekleştirebilmektedir. Bunlardan bir kaç tanesi brute-force RDP, brute-force SSH, brute force FTP …
 
-Github üzerinden https://github.com/lanjelot/patator link üzerinde indirdim ve ayrıca kodda biraz değişiklik yaptım. Değişiklik yaptığım kod yukarıya ekledim.
+Github üzerinden https://github.com/lanjelot/patator link üzerinde indirdim ve ayrıca kodda biraz değişiklik yaptım. Değişiklik yaptığım kodu yukarıya ekledim.
 
 
 Kullanım:
@@ -77,7 +79,9 @@ Password=FILE0 0=filename : Hedef makine üzerinde denenecek parolaları dosyada
 
 #### Örnek Kullanım Kodu:
 
-#### . /patator.py rdp_login host=192.168.0.31 user='decoder' password=FILE0 0=rdp_pass.lst
+#### ./patator.py rdp_login host=192.168.0.31 user='decoder' password=FILE0 0=rdp_pass.lst
+
+
 
 
 ![ekran resmi 2018-04-13 12 33 26](https://user-images.githubusercontent.com/37982203/38737266-5d9b92fa-3f37-11e8-848c-b9c70ffbb410.png)
@@ -89,7 +93,7 @@ Password=FILE0 0=filename : Hedef makine üzerinde denenecek parolaları dosyada
 ![ekran resmi 2018-04-13 12 34 50](https://user-images.githubusercontent.com/37982203/38737280-6a7911d2-3f37-11e8-87ce-8ecf13b8cdfd.png)
 
 
-#### Örnek Kullanim video linki:
+#### Örnek Kullanım video linki:
 
 https://www.youtube.com/watch?v=KoOftYuh7fg&t=10s
 
@@ -133,18 +137,20 @@ Bunun için output anlamına gelen -o , yanına dosya türü ve yanına dosya is
 
 #### ncrack -vv - -user decoder -P /root/Desktop/rdp_pass.lst rdp://192.168.0.22
 
+
+
 ![ekran resmi 2018-04-13 01 40 03](https://user-images.githubusercontent.com/37982203/38737538-3d9a63c2-3f38-11e8-8643-8c7f49f83270.png)
 
 ![ekran resmi 2018-04-13 01 40 22](https://user-images.githubusercontent.com/37982203/38737541-407133aa-3f38-11e8-9d94-ea32f1a6b1ee.png)
 
 ![ekran resmi 2018-04-13 01 58 46](https://user-images.githubusercontent.com/37982203/38737543-41dbe244-3f38-11e8-957f-18431715f5c3.png)
 
-#### Örnek Kullanim video linki:
+#### Örnek Kullanım video linki:
 
 https://www.youtube.com/watch?v=i4UNL_XUNhg
 
-# 4)	Medusa - Parola Kirma Araci
-Medusa büyük ölçüde paralelmis, modüler bir parola kırma aracıdır. Birçok servise uzaktan doğrulama izni saglamaktadır. Thread tabanlı paralelleştirme testi yaptığı için eş zamanlı olarak coklu host, kullanıcı adı ve parolalarla yapılabilmektedir. Esnek kullanıcı girdisi sağlamaktadır. Modular dizayn sayesinde her servis birbirinden bağımsızdır. Bu sayede servis listesini genişletmesi için ana uygulamayı değiştirmesine gerek yoktur.
+# 4)	Medusa - Parola Kırma Aracı
+Medusa büyük ölçüde paralellesmis, modüler bir parola kırma aracıdır. Birçok servise uzaktan doğrulama izni saglamaktadır. Thread tabanlı paralelleştirme testi yaptığı için eş zamanlı olarak coklu host, kullanıcı adı ve parolalarla yapılabilmektedir. Esnek kullanıcı girdisi sağlamaktadır. Modular dizayn sayesinde her servis birbirinden bağımsızdır. Bu sayede servis listesini genişletmesi için ana uygulamayı değiştirmesine gerek yoktur.
 
 Kullanım :
 
@@ -180,7 +186,7 @@ Kullanım :
 
 ![ekran resmi 2018-04-13 01 59 09](https://user-images.githubusercontent.com/37982203/38737726-cacbbf48-3f38-11e8-93e0-cf73603d56a5.png)
 
-#### Örnek Kullanim video linki:
+#### Örnek Kullanım video linki:
 
 https://www.youtube.com/watch?v=QErn6wUyxps
 
