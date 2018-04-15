@@ -12,7 +12,7 @@ Kurulum
 
 Daha sonra son versiyonunu indirip kullanabilirsiniz.
 
-Ben github üzerinden https://github.com/galkan/crowbar link üzerinde indirdim.
+Ben github üzerinden https://github.com/galkan/crowbar link üzerinden indirdim.
 
 Kullanım
 
@@ -54,7 +54,7 @@ https://www.youtube.com/watch?v=M15ESpW0Vf8
 #   2) Patator - Parola Kırma Aracı
 Patator parola tahmin etme atakları için yazılmıştır. Diğer araçlara göre hızlı olması için optimize edilmiş çoklu thread modülünü kullanan Python ile yazılmıştır. 20 'e yakın protokole paralo kırma atağı gerçekleştirebilmektedir. Bunlardan bir kaç tanesi brute-force RDP, brute-force SSH, brute force FTP …
 
-Github üzerinden https://github.com/lanjelot/patator link üzerinde indirdim ve ayrıca kodda biraz değişiklik yaptım. Değişiklik yaptığım kodu yukarıya ekledim.
+Github üzerinden https://github.com/lanjelot/patator link üzerinden indirdim ve ayrıca kodda biraz değişiklik yaptım. Değişiklik yaptığım kodu yukarıya ekledim.
 
 
 Kullanım:
