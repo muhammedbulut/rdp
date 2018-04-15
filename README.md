@@ -100,7 +100,21 @@ https://www.youtube.com/watch?v=KoOftYuh7fg&t=10s
 
 # 3) Ncrack - Parola Kırma Aracı
 
-Ncrack sızma testleri esnasında kullanılan bir parola kırma aracıdır. Geniş kapsamlı olup FTP, SSH, Telnet, HTTP, SMB, RDP, VNC gibi modülleri bulunmaktadır. Kali linuxda kullanabilinmektedir.
+Ncrack, ağ kimlik kırmak için açık kaynak kodlu bir araçtır. Farklı ağ durumlarına uyum sağlayabilen dinamik bir yapı kullanılarak yüksek hızlı paralel kırma için tasarlanmıştır. Ncrack, özel durumlar için kapsamlı olarak ince ayar yapılabilir, ancak varsayılan parametreler neredeyse her durumu kapsayacak kadar geneldir. Ek protokolleri desteklemek için kolay izin veren modüler bir mimari üzerine kurulmuştur. Ncrack'ın çıktısı, belirtilen hedeflerin her biri için varsa, bulunan kimlik bilgilerinin listesidir. Ncrack ayrıca, kullanıcı o seçeneği seçtiyse, şu ana kadar ilerlemenin etkileşimli bir durum raporu ve sorunların izlenmesine yardımcı olabilecek ek hata ayıklama bilgileri de yazdırabilir.
+Örnek 1'de tipik bir Ncrack taraması gösterilmiştir. Bu örnekte kullanılan tek Ncrack argümanı, her biri için karşılık gelen portlarla birlikte iki hedef IP adresidir. Örnek iki port 21 ve 22, bunları dinleyen varsayılan hizmetlere otomatik olarak çözümlenir:ftp ve ssh.
+
+       Example 1. A representative Ncrack scan
+
+           $ ncrack 10.0.0.130:21 192.168.1.2:22
+
+           Starting Ncrack 0.5 ( http://ncrack.org ) at 2016-01-03 22:10 EEST
+
+           Discovered credentials for ftp on 10.0.0.130 21/tcp:
+           10.0.0.130 21/tcp ftp: admin hello1
+           Discovered credentials for ssh on 192.168.1.2 22/tcp:
+           192.168.1.2 22/tcp ssh: guest 12345
+           192.168.1.2 22/tcp ssh: admin money$
+
 
 Kullanım
 
